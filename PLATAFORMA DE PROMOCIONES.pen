@@ -1539,7 +1539,9 @@
           "height": 70,
           "fill": "#000000ff",
           "stroke": {
-            "thickness": 1,
+            "thickness": {
+              "bottom": 1
+            },
             "fill": "#CCCCCC"
           },
           "padding": [
@@ -3277,7 +3279,9 @@
           "height": 70,
           "fill": "#000000ff",
           "stroke": {
-            "thickness": 1,
+            "thickness": {
+              "bottom": 1
+            },
             "fill": "#CCCCCC"
           },
           "padding": [
@@ -4880,6 +4884,14 @@
             },
             {
               "type": "frame",
+              "id": "xpLCd",
+              "name": "Frame 12",
+              "width": "fill_container",
+              "height": "fit_content(63)",
+              "gap": 20
+            },
+            {
+              "type": "frame",
               "id": "3hrFw",
               "name": "Frame 12",
               "width": "fill_container",
@@ -6285,7 +6297,9 @@
           "height": 70,
           "fill": "#000000ff",
           "stroke": {
-            "thickness": 1,
+            "thickness": {
+              "bottom": 1
+            },
             "fill": "#CCCCCC"
           },
           "padding": [
