@@ -4,8 +4,8 @@
     {
       "type": "frame",
       "id": "bi8Au",
-      "x": 1126,
-      "y": -1,
+      "x": -1199,
+      "y": 1767,
       "name": "Design System Plataforma",
       "clip": true,
       "width": 800,
@@ -2897,9 +2897,9 @@
     {
       "type": "frame",
       "id": "Z4LAz",
-      "x": 5094,
-      "y": 1167,
-      "name": "Detalle de registro - VÁLIDO",
+      "x": 5245,
+      "y": 1354,
+      "name": "Popup - Detalle de registro - VÁLIDO",
       "clip": true,
       "fill": "#090a0eff",
       "cornerRadius": 20,
@@ -3066,7 +3066,7 @@
                       "type": "text",
                       "id": "Hfiaj",
                       "fill": "#ffffffff",
-                      "content": "Claisificación de reigstro",
+                      "content": "Estado de registro",
                       "fontFamily": "Inter",
                       "fontSize": 12,
                       "fontWeight": "600"
@@ -3876,7 +3876,7 @@
       "id": "pQqjY",
       "x": 3838,
       "y": 2664,
-      "name": "Aviso Correo enviado",
+      "name": "Popup - Aviso Correo enviado",
       "clip": true,
       "fill": "#090a0eff",
       "cornerRadius": 20,
@@ -3959,7 +3959,7 @@
       "id": "gp21u",
       "x": 5740,
       "y": 2664,
-      "name": "Aviso Nueva contraseña lista",
+      "name": "Popup - Aviso Nueva contraseña lista",
       "clip": true,
       "fill": "#090a0eff",
       "cornerRadius": 20,
@@ -4207,10 +4207,11 @@
     {
       "type": "frame",
       "id": "mmA9X",
-      "x": 5853,
-      "y": 1167,
-      "name": "Detalle de registro - INVÁLIDO",
+      "x": 6004,
+      "y": 1354,
+      "name": "Popup - Detalle de registro - INVÁLIDO",
       "clip": true,
+      "height": 449,
       "fill": "#090a0eff",
       "cornerRadius": 20,
       "layout": "vertical",
@@ -5057,6 +5058,7 @@
                           "textAlign": "right",
                           "fontFamily": "Inter",
                           "fontSize": 9,
+                          "fontWeight": "normal",
                           "fontStyle": "italic"
                         }
                       ]
@@ -5129,6 +5131,65 @@
           "height": 800
         }
       ]
+    },
+    {
+      "type": "note",
+      "id": "hc9HU",
+      "x": 3838,
+      "y": 504,
+      "width": 427,
+      "height": 219,
+      "content": "Variables en filtros:\n\nRegistro = Fecha_registro (rango)\n\nTicket = Fecha_ticket (valor)\n\nEstado de registro = Clasificacion_ticket (valores posibles)\n\nSucursal = Sucursal_ticket (valores posibles)\n\nFolio de Ticket = Folio_ticket (valor)\n\nID de registro = ID_registro (valor)\n\nNombre del participante = Nombre_registro (valor)\n\nWhatsApp = Whatsapp_registro (valor)"
+    },
+    {
+      "type": "context",
+      "id": "G26HVN",
+      "x": 804,
+      "y": 1354,
+      "width": 661,
+      "height": 394,
+      "content": "ID_registro = Número consecutivo automático en formato J-0000000\n\nFecha_registro = Fecha y hora de creación de registro\n\nNombre_registro = Texto enviado por usuario en WhatsApp\n\nWhatsapp_registro = Número formato número recopilado de usuario\n\nTrivia_registro = yes si respuesta correcta, no si respuesta incorrecta enviado por usuario en WhatsApp\n\nFecha_ticket = Fecha y hora extraído de Archivo_ticket\n\nFolio_ticket = Texto extraído de Archivo_ticket\n\nSucursal_ticket = Numero - Nombre sucursal extraído de Archivo_ticket\n\nMonto_ticket = Número extraído de Archivo_ticket\n\nProductos_ticket = TBD a viabilidad\n\nArchivo_ticket = Imagen enviada por usuario en WhatsApp\n\nClasificacion_registro = VÁLIDO si Folio_Ticket es único, Trivia_Registro es yes, Sucursal_registro está en la lista de sucursales participantes, Monto_ticket es igual o mayor a mínimo de monto, INVALIDO si no cumple con todas las condiciones de VÁLIDO"
+    },
+    {
+      "type": "rectangle",
+      "id": "gWerQ",
+      "x": 1605,
+      "y": 1308,
+      "fill": {
+        "type": "image",
+        "enabled": true,
+        "url": "image.png",
+        "mode": "fill"
+      },
+      "width": 493,
+      "height": 675
+    },
+    {
+      "type": "context",
+      "id": "s4QqcC",
+      "x": 1661,
+      "y": 1739,
+      "width": 382,
+      "height": 219,
+      "content": "No. sucursal + Sucursal = Sucursal_ticket\nFECHA = Fecha_ticket\nFOLIO = Folio_ticket\nTOTAL = Monto_ticket"
+    },
+    {
+      "type": "note",
+      "id": "WwXrJ",
+      "x": 4294,
+      "y": 504,
+      "width": 427,
+      "height": 219,
+      "content": "Valores en columnas:\n\nFecha y hora registro = Fecha_registro\n\nFolio de Ticket = Folio_ticket\n\nSucursal = Sucursal_registro\n\nID de registro = ID_registro\n\nNombre del participante = Nombre_registro\n\nWhatsApp = WhatsApp_registro\n\nEstado = Clasificacion_registro"
+    },
+    {
+      "type": "note",
+      "id": "TEwIO",
+      "x": 5392,
+      "y": 504,
+      "width": 427,
+      "height": 219,
+      "content": "Valores en campos:\n\nID de registro = ID_registro\n\nFecha y hora registro = Fecha_registro\n\nEstado de registro = Clasificacion_registro\n\nNombre del participante = Nombre_registro\n\nNúmero de WhatsApp = WhatsApp_registro\n\n¿Respondió correcto? = Trivia_registro\n\nFecha y hora de Ticket = Fecha_registro\n\nFolio de Ticket = Folio_ticket\n\nSucursal = Sucursal_registro\n\nMonto total = Monto_ticket\n\nProductos = TBD\n\nArchivo de Ticket = Archivo_ticket"
     }
   ],
   "variables": {
