@@ -1,0 +1,311 @@
+{
+  "edges": [
+    {
+      "label": "next",
+      "source": "send_interactive_1775520060795",
+      "target": "wait_for_response_1775520119057_0"
+    },
+    {
+      "label": "next",
+      "source": "start",
+      "target": "send_text_1775519875854"
+    },
+    {
+      "label": "next",
+      "source": "send_text_1775519875854",
+      "target": "wait_for_response_1775519970940"
+    },
+    {
+      "label": "next",
+      "source": "wait_for_response_1775519970940",
+      "target": "send_text_1775519985116_0"
+    },
+    {
+      "label": "next",
+      "source": "wait_for_response_1775520119057_0",
+      "target": "send_text_1775520145060_0"
+    },
+    {
+      "label": "next",
+      "source": "send_text_1775519985116_0",
+      "target": "send_text_1776181284316_0"
+    },
+    {
+      "label": "next",
+      "source": "send_text_1775520145060_0",
+      "target": "send_text_1776181478760_0"
+    },
+    {
+      "label": "next",
+      "source": "send_text_1776181284316_0",
+      "target": "send_interactive_1775520060795"
+    },
+    {
+      "label": "next",
+      "source": "send_text_1776181478760_0",
+      "target": "send_text_1776181497647_0"
+    },
+    {
+      "label": "next",
+      "source": "send_text_1776181497647_0",
+      "target": "send_text_1776181527951_0"
+    }
+  ],
+  "nodes": [
+    {
+      "data": {
+        "config": {},
+        "node_type": "start"
+      },
+      "id": "start",
+      "position": {
+        "x": 100,
+        "y": 100
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "action_config": {
+            "buttons": [
+              {
+                "id": "button_1775520100051",
+                "title": "2"
+              },
+              {
+                "id": "button_1775520106709",
+                "title": "10"
+              },
+              {
+                "id": "button_1775520110704",
+                "title": "20"
+              }
+            ]
+          },
+          "ai_field_config": {},
+          "body_text": "¿Cuántas patas tiene un pollo?",
+          "buttons": [
+            {
+              "id": "button_1775520100051",
+              "title": "2"
+            },
+            {
+              "id": "button_1775520106709",
+              "title": "10"
+            },
+            {
+              "id": "button_1775520110704",
+              "title": "20"
+            }
+          ],
+          "footer_text": null,
+          "header_config": {},
+          "header_type": "none",
+          "interactive_type": "button",
+          "phone_number_id": null,
+          "provider_model_id": null,
+          "provider_model_name": null,
+          "to_phone_number": null,
+          "whatsapp_config_id": null
+        },
+        "display_name": "Send Interactive Message",
+        "node_type": "send_interactive"
+      },
+      "id": "send_interactive_1775520060795",
+      "position": {
+        "x": 100,
+        "y": 800
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "ai_field_config": {},
+          "delay_seconds": 0,
+          "message": "Hola Rafa, bienvenido a “QUÉ PASIÓN ¡QUÉ POLLO!, nos alegra mucho tu participación. Para poder registrar tu participación, necesito que me envíes una foto de tu ticket de compra. Con esa información podré extraer los datos necesarios y verificar todo para registrar tu participación. ¿Podrás compartir la foto de tu ticket de\ncompra conmigo?",
+          "phone_number_id": null,
+          "provider_model_id": null,
+          "provider_model_name": null,
+          "to_phone_number": null,
+          "whatsapp_config_id": null
+        },
+        "display_name": "Send Text Message",
+        "node_type": "send_text"
+      },
+      "id": "send_text_1775519875854",
+      "position": {
+        "x": 60,
+        "y": 240
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "has_timeout": false,
+          "save_response_to": null,
+          "timeout_seconds": null
+        },
+        "display_name": "Wait for Response",
+        "node_type": "wait_for_response"
+      },
+      "id": "wait_for_response_1775519970940",
+      "position": {
+        "x": 100,
+        "y": 400
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "has_timeout": false,
+          "save_response_to": null,
+          "timeout_seconds": null
+        },
+        "display_name": "Wait for Response",
+        "node_type": "wait_for_response"
+      },
+      "id": "wait_for_response_1775520119057_0",
+      "position": {
+        "x": 100,
+        "y": 960
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "ai_field_config": {},
+          "delay_seconds": 0,
+          "message": "Perfecto, déjame revisar tu ticket de compra para extraer los datos.\n",
+          "phone_number_id": null,
+          "provider_model_id": null,
+          "provider_model_name": null,
+          "to_phone_number": null,
+          "whatsapp_config_id": null
+        },
+        "display_name": "Send Text Message",
+        "node_type": "send_text"
+      },
+      "id": "send_text_1775519985116_0",
+      "position": {
+        "x": 80,
+        "y": 520
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "ai_field_config": {},
+          "delay_seconds": 0,
+          "message": "Bien contestado ¡Tú registro está listo!",
+          "phone_number_id": null,
+          "provider_model_id": null,
+          "provider_model_name": null,
+          "to_phone_number": null,
+          "whatsapp_config_id": null
+        },
+        "display_name": "Send Text Message",
+        "node_type": "send_text"
+      },
+      "id": "send_text_1775520145060_0",
+      "position": {
+        "x": 60,
+        "y": 1100
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "ai_field_config": {},
+          "delay_seconds": 0,
+          "message": " Excelente, gracias por tu compra en sucursal Casa Blanca este 3 de Abril. Sólo falta 1 pregunta para registrar tu participación.",
+          "phone_number_id": null,
+          "provider_model_id": null,
+          "provider_model_name": null,
+          "to_phone_number": null,
+          "whatsapp_config_id": null
+        },
+        "display_name": "Send Text Message",
+        "node_type": "send_text"
+      },
+      "id": "send_text_1776181284316_0",
+      "position": {
+        "x": 80,
+        "y": 660
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "ai_field_config": {},
+          "delay_seconds": 0,
+          "message": "Este próximo viernes 15 de mayo se estarán comunicando los 60 ganadores de esta semana a través de la página de FB ¡Qué Pollo!",
+          "phone_number_id": null,
+          "provider_model_id": null,
+          "provider_model_name": null,
+          "to_phone_number": null,
+          "whatsapp_config_id": null
+        },
+        "display_name": "Send Text Message",
+        "node_type": "send_text"
+      },
+      "id": "send_text_1776181478760_0",
+      "position": {
+        "x": 80,
+        "y": 1220
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "ai_field_config": {},
+          "delay_seconds": 0,
+          "message": "Sigue comprando y participando para ganar uno de los 600 Jerseys edición limitada ¡Qué Pollo!\n\nLos participantes que contesten correctamente la pregunta y lo hagan en el menor tiempo, serán los ganadores. Recuerda, cada semana habrá 60 nuevos Jerseys que podrás ganar.",
+          "phone_number_id": null,
+          "provider_model_id": null,
+          "provider_model_name": null,
+          "to_phone_number": null,
+          "whatsapp_config_id": null
+        },
+        "display_name": "Send Text Message",
+        "node_type": "send_text"
+      },
+      "id": "send_text_1776181497647_0",
+      "position": {
+        "x": 80,
+        "y": 1380
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "ai_field_config": {},
+          "delay_seconds": 0,
+          "message": "Promoción valida hasta el 19 de julio del 2026",
+          "phone_number_id": null,
+          "provider_model_id": null,
+          "provider_model_name": null,
+          "to_phone_number": null,
+          "whatsapp_config_id": null
+        },
+        "display_name": "Send Text Message",
+        "node_type": "send_text"
+      },
+      "id": "send_text_1776181527951_0",
+      "position": {
+        "x": 80,
+        "y": 1520
+      },
+      "type": "flow-node"
+    }
+  ]
+}

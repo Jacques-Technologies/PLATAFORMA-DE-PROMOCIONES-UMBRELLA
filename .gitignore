@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build artifacts
+web/dist/
+functions/lib/
+
+# Python
+functions/venv/
+functions/__pycache__/
+functions/**/__pycache__/
+functions/.python-version
+
+# Env / secrets
+*.env.local
+*.env.*.local
+web/.env.local
+.runtimeconfig.json
+.env
+
+# Firebase
+.firebase/
+firebase-debug.log
+firebase-debug.*.log
+ui-debug.log
+
+# Editor
+.vscode/
+.idea/
+*.swp
+.DS_Store

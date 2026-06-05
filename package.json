@@ -1,0 +1,22 @@
+{
+  "name": "que-pollo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Plataforma admin de registros de tickets de promociones",
+  "scripts": {
+    "dev": "concurrently -k -n web,emulators -c blue,magenta \"npm --prefix web run dev\" \"firebase emulators:start --import=./.emulator-data --export-on-exit\"",
+    "dev:web": "npm --prefix web run dev",
+    "dev:emulators": "firebase emulators:start --import=./.emulator-data --export-on-exit",
+    "build": "npm --prefix web run build",
+    "deploy": "npm run build && firebase deploy",
+    "deploy:hosting": "npm run build && firebase deploy --only hosting",
+    "deploy:functions": "firebase deploy --only functions",
+    "deploy:rules": "firebase deploy --only firestore:rules,storage:rules",
+    "seed": "node scripts/seed-emulator.mjs"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1",
+    "firebase-admin": "^12.7.0",
+    "playwright-core": "^1.59.1"
+  }
+}

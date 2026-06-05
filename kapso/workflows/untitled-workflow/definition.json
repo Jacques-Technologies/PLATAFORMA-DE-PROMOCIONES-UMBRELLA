@@ -1,0 +1,145 @@
+{
+  "edges": [
+    {
+      "label": "next",
+      "source": "start",
+      "target": "agent_1775261984651"
+    },
+    {
+      "label": "next",
+      "source": "wait_for_response_1775262394004_0",
+      "target": "send_text_1775262400849"
+    }
+  ],
+  "nodes": [
+    {
+      "data": {
+        "config": {},
+        "node_type": "start"
+      },
+      "id": "start",
+      "position": {
+        "x": 100,
+        "y": 100
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "has_timeout": false,
+          "save_response_to": "primera-preg2",
+          "timeout_seconds": null
+        },
+        "display_name": "Wait for Response",
+        "node_type": "wait_for_response"
+      },
+      "id": "wait_for_response_1775262356662_0",
+      "position": {
+        "x": 100,
+        "y": 760
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "enabled_default_tools": [
+            "send_notification_to_user",
+            "send_media",
+            "get_execution_metadata",
+            "get_whatsapp_context",
+            "get_current_datetime",
+            "save_variable",
+            "get_variable",
+            "ask_about_file",
+            "enter_waiting",
+            "complete_task",
+            "handoff_to_human"
+          ],
+          "flow_agent_app_integration_tools": [],
+          "flow_agent_function_tools": [],
+          "flow_agent_knowledge_bases": [],
+          "flow_agent_mcp_servers": [],
+          "flow_agent_resources": [],
+          "flow_agent_webhooks": [],
+          "max_iterations": 15,
+          "max_tokens": 4000,
+          "observer_prompt_mode": "analysis_only",
+          "provider_model_id": "8c6d57df-3f07-4290-b8a5-38047608c4df",
+          "provider_model_name": "claude-haiku-4-5",
+          "reasoning_effort": null,
+          "sandbox_allowed_outbound_hosts": [],
+          "sandbox_enabled": false,
+          "sandbox_network_mode": "allow_all",
+          "system_prompt": "Eres parte del equipo de ¡Qué pollo! \n\nEres un asistente inteligente de whatsapp enfocado en ayudar a validar una promoción en sucursal.\n\nLa conversación inició porque al cliente le trajeron la cuenta y un QR que escaneo donde inició esta conversación por whatsapp.\n\nTu trabajo es saludarlo y pedir el ticket en foto donde puedas validar y extraer la fecha, sucursal y monto total.\n\nCuando logras extraer estos datos le agradeces por su compra en {sucursal} y le comentas que solo faltan 3 preguntas para que reciba su promoción.\n\nAhí termina tu tarea. En cuanto tengas la información termina la tarea para que continue. No esperes respuesta final del cliente.",
+          "temperature": "0.1"
+        },
+        "display_name": "AI Agent",
+        "node_type": "agent"
+      },
+      "id": "agent_1775261984651",
+      "position": {
+        "x": 60,
+        "y": 260
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "has_timeout": false,
+          "save_response_to": "primera-preg",
+          "timeout_seconds": null
+        },
+        "display_name": "Wait for Response",
+        "node_type": "wait_for_response"
+      },
+      "id": "wait_for_response_1775262306364",
+      "position": {
+        "x": 100,
+        "y": 520
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "has_timeout": false,
+          "save_response_to": "primera-preg2",
+          "timeout_seconds": null
+        },
+        "display_name": "Wait for Response",
+        "node_type": "wait_for_response"
+      },
+      "id": "wait_for_response_1775262394004_0",
+      "position": {
+        "x": 100,
+        "y": 1060
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "ai_field_config": {},
+          "delay_seconds": 0,
+          "message": "¡Tu promoción esta lista! Muestra este mensaje a tu mesero.\n\nPromoción válida hasta el 4 de Abril de 2026",
+          "phone_number_id": null,
+          "provider_model_id": null,
+          "provider_model_name": null,
+          "to_phone_number": null,
+          "whatsapp_config_id": null
+        },
+        "display_name": "Send Text Message",
+        "node_type": "send_text"
+      },
+      "id": "send_text_1775262400849",
+      "position": {
+        "x": 60,
+        "y": 1200
+      },
+      "type": "flow-node"
+    }
+  ]
+}

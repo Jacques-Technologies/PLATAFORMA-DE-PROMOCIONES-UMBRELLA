@@ -1,0 +1,10 @@
+entrypoint: index.js
+function_type: cloudflare_worker
+invoke_response_mode: passthrough
+name: firebase-consultar-folio
+public_endpoint: false
+runtime_config:
+  secrets:
+    fIREBASEBASEURL: https://us-central1-que-pollo-jtech.cloudfunctions.net
+    fIREBASEKEY: c2230f66a8de25a20e38b04849ebc57a1cd70172e218ab133a08271be04b43e8
+slug: firebase-consultar-folio

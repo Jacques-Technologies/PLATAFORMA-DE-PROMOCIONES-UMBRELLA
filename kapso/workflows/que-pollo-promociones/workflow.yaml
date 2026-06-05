@@ -1,0 +1,8 @@
+definition: definition.json
+name: Que Pollo — Promociones
+slug: que-pollo-promociones
+status: draft
+triggers:
+  - active: true
+    phoneNumberId: "1113227451868988"
+    triggerType: inbound_message

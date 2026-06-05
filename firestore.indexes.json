@@ -1,0 +1,114 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "registros",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "Clasificacion_registro", "order": "ASCENDING" },
+        { "fieldPath": "Fecha_registro", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "registros",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "Sucursal_ticket", "order": "ASCENDING" },
+        { "fieldPath": "Fecha_registro", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "registros",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "Folio_ticket", "order": "ASCENDING" },
+        { "fieldPath": "Fecha_registro", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "registros",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "ID_registro", "order": "ASCENDING" },
+        { "fieldPath": "Fecha_registro", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "registros",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "Nombre_registro", "order": "ASCENDING" },
+        { "fieldPath": "Fecha_registro", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "registros",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "Whatsapp_registro", "order": "ASCENDING" },
+        { "fieldPath": "Fecha_registro", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "registros",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "Fecha_ticket", "order": "ASCENDING" },
+        { "fieldPath": "Fecha_registro", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "registros",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "campania", "order": "ASCENDING" },
+        { "fieldPath": "Folio_ticket", "order": "ASCENDING" },
+        { "fieldPath": "Clasificacion_registro", "order": "ASCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "registros",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "campania", "order": "ASCENDING" },
+        { "fieldPath": "Fecha_registro", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "registros",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "Clasificacion_registro", "order": "ASCENDING" },
+        { "fieldPath": "Fecha_registro", "order": "DESCENDING" },
+        { "fieldPath": "Folio_ticket", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "registros",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "Clasificacion_registro", "order": "ASCENDING" },
+        { "fieldPath": "Fecha_registro", "order": "DESCENDING" },
+        { "fieldPath": "ID_registro", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "registros",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "Clasificacion_registro", "order": "ASCENDING" },
+        { "fieldPath": "Fecha_registro", "order": "DESCENDING" },
+        { "fieldPath": "Nombre_registro", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "registros",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "Clasificacion_registro", "order": "ASCENDING" },
+        { "fieldPath": "Fecha_registro", "order": "DESCENDING" },
+        { "fieldPath": "Whatsapp_registro", "order": "DESCENDING" }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}

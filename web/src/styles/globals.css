@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@import "@fontsource/poppins/300.css";
+@import "@fontsource/poppins/400.css";
+@import "@fontsource/poppins/500.css";
+@import "@fontsource/poppins/600.css";
+@import "@fontsource/poppins/700.css";
+
+@theme {
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+
+  --color-primario: #7d15b4;
+  --color-primario-hover: #6a118f;
+  --color-primario-soft: #d090e8;
+  --color-hover: #2c2b4d;
+
+  --color-fondo-1: #090a0e;
+  --color-fondo-2: #000000;
+  --color-fondo-3: #252525;
+  --color-fondo-app: #000000;
+
+  --color-gris: #252525;
+  --color-gris-2: #999999;
+  --color-gris-3: #cccccc;
+  --color-gris-4: #404040;
+  --color-gris-soft: #6a6a6a;
+
+  --color-blanco: #ffffff;
+  --color-texto: #ffffff;
+  --color-texto-soft: #c8c8c8;
+  --color-texto-muted: #8a8aba;
+
+  --color-verde: #1c9630;
+  --color-rojo: #d63031;
+  --color-naranja: #ffad38;
+
+  --radius-card: 12px;
+  --radius-input: 8px;
+  --radius-button: 8px;
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+  body {
+    background-color: var(--color-fondo-app);
+    color: var(--color-texto);
+    font-family: var(--font-sans);
+    font-feature-settings: "rlig" 1, "calt" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  /* dark scrollbars */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-fondo-1);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-gris);
+    border-radius: 6px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-gris-4);
+  }
+}

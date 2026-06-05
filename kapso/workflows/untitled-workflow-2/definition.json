@@ -1,0 +1,324 @@
+{
+  "edges": [
+    {
+      "label": "next",
+      "source": "wait_for_response_1775483402369_0",
+      "target": "send_text_1775433533532_0"
+    },
+    {
+      "label": "next",
+      "source": "wait_for_response_1775433009557",
+      "target": "send_text_1775433871685_0"
+    },
+    {
+      "label": "next",
+      "source": "send_text_1775433095695",
+      "target": "wait_for_response_1775433143928_0"
+    },
+    {
+      "label": "next",
+      "source": "wait_for_response_1775433143928_0",
+      "target": "send_text_1775433151334_0"
+    },
+    {
+      "label": "next",
+      "source": "send_text_1775433151334_0",
+      "target": "wait_for_response_1775433269888_0"
+    },
+    {
+      "label": "next",
+      "source": "send_text_1775433871685_0",
+      "target": "wait_for_response_1775433983509_0"
+    },
+    {
+      "label": "next",
+      "source": "wait_for_response_1775433284372_0",
+      "target": "send_text_1775433297028_0"
+    },
+    {
+      "label": "next",
+      "source": "send_text_1775433297028_0",
+      "target": "wait_for_response_1775433345185_0"
+    },
+    {
+      "label": "next",
+      "source": "wait_for_response_1775433345185_0",
+      "target": "send_text_1775433352061_0"
+    },
+    {
+      "label": "next",
+      "source": "send_text_1775433352061_0",
+      "target": "wait_for_response_1775483402369_0"
+    },
+    {
+      "label": "next",
+      "source": "wait_for_response_1775433983509_0",
+      "target": "send_text_1775433095695"
+    }
+  ],
+  "nodes": [
+    {
+      "data": {
+        "config": {},
+        "node_type": "start"
+      },
+      "id": "start",
+      "position": {
+        "x": 100,
+        "y": 100
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "has_timeout": false,
+          "save_response_to": null,
+          "timeout_seconds": null
+        },
+        "display_name": "Wait for Response",
+        "node_type": "wait_for_response"
+      },
+      "id": "wait_for_response_1775483402369_0",
+      "position": {
+        "x": 100,
+        "y": 1780
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "has_timeout": false,
+          "save_response_to": null,
+          "timeout_seconds": null
+        },
+        "display_name": "Wait for Response",
+        "node_type": "wait_for_response"
+      },
+      "id": "wait_for_response_1775433009557",
+      "position": {
+        "x": 100,
+        "y": 380
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "ai_field_config": {},
+          "delay_seconds": 0,
+          "message": "Si me compartes tu código postal reviso la fecha de entrega estimada",
+          "phone_number_id": null,
+          "provider_model_id": null,
+          "provider_model_name": null,
+          "to_phone_number": null,
+          "whatsapp_config_id": null
+        },
+        "display_name": "Send Text Message",
+        "node_type": "send_text"
+      },
+      "id": "send_text_1775433095695",
+      "position": {
+        "x": -20,
+        "y": 560
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "has_timeout": false,
+          "save_response_to": null,
+          "timeout_seconds": null
+        },
+        "display_name": "Wait for Response",
+        "node_type": "wait_for_response"
+      },
+      "id": "wait_for_response_1775433143928_0",
+      "position": {
+        "x": 100,
+        "y": 680
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "ai_field_config": {},
+          "delay_seconds": 0,
+          "message": "Perfecto, sería entre 5 a 7 días hábiles. ¿Cómo ves?",
+          "phone_number_id": null,
+          "provider_model_id": null,
+          "provider_model_name": null,
+          "to_phone_number": null,
+          "whatsapp_config_id": null
+        },
+        "display_name": "Send Text Message",
+        "node_type": "send_text"
+      },
+      "id": "send_text_1775433151334_0",
+      "position": {
+        "x": 80,
+        "y": 820
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "ai_field_config": {},
+          "delay_seconds": 0,
+          "message": "¡Súper! Tu próximo sillón esta muy cerca🎉\n\n¿Te ayudo a seguir buscando en nuestro catálogo?",
+          "phone_number_id": null,
+          "provider_model_id": null,
+          "provider_model_name": null,
+          "to_phone_number": null,
+          "whatsapp_config_id": null
+        },
+        "display_name": "Send Text Message",
+        "node_type": "send_text"
+      },
+      "id": "send_text_1775433871685_0",
+      "position": {
+        "x": 360,
+        "y": 420
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "has_timeout": false,
+          "save_response_to": null,
+          "timeout_seconds": null
+        },
+        "display_name": "Wait for Response",
+        "node_type": "wait_for_response"
+      },
+      "id": "wait_for_response_1775433269888_0",
+      "position": {
+        "x": 100,
+        "y": 960
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "has_timeout": false,
+          "save_response_to": null,
+          "timeout_seconds": null
+        },
+        "display_name": "Wait for Response",
+        "node_type": "wait_for_response"
+      },
+      "id": "wait_for_response_1775433284372_0",
+      "position": {
+        "x": 100,
+        "y": 1240
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "ai_field_config": {},
+          "delay_seconds": 0,
+          "message": "Va, tengo tu pedido listo, ¿algo más que te pueda hacer falta?\nTal vez, unos cojines que le combinen...",
+          "phone_number_id": null,
+          "provider_model_id": null,
+          "provider_model_name": null,
+          "to_phone_number": null,
+          "whatsapp_config_id": null
+        },
+        "display_name": "Send Text Message",
+        "node_type": "send_text"
+      },
+      "id": "send_text_1775433297028_0",
+      "position": {
+        "x": 60,
+        "y": 1360
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "has_timeout": false,
+          "save_response_to": null,
+          "timeout_seconds": null
+        },
+        "display_name": "Wait for Response",
+        "node_type": "wait_for_response"
+      },
+      "id": "wait_for_response_1775433345185_0",
+      "position": {
+        "x": 100,
+        "y": 1520
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "ai_field_config": {},
+          "delay_seconds": 0,
+          "message": "Si todo es correcto, puedes hacer clic en esta liga realizar tu pago y procesaremos tu pedido.\n\nhttps://demopage.com/order123",
+          "phone_number_id": null,
+          "provider_model_id": null,
+          "provider_model_name": null,
+          "to_phone_number": null,
+          "whatsapp_config_id": null
+        },
+        "display_name": "Send Text Message",
+        "node_type": "send_text"
+      },
+      "id": "send_text_1775433533532_0",
+      "position": {
+        "x": 80,
+        "y": 1920
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "ai_field_config": {},
+          "delay_seconds": 0,
+          "message": "Muy bien. Te confirmo tu orden:\n1x Sillón Aruba gris\n1x Garantía por 2 años",
+          "phone_number_id": null,
+          "provider_model_id": null,
+          "provider_model_name": null,
+          "to_phone_number": null,
+          "whatsapp_config_id": null
+        },
+        "display_name": "Send Text Message",
+        "node_type": "send_text"
+      },
+      "id": "send_text_1775433352061_0",
+      "position": {
+        "x": 60,
+        "y": 1640
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "has_timeout": false,
+          "save_response_to": null,
+          "timeout_seconds": null
+        },
+        "display_name": "Wait for Response",
+        "node_type": "wait_for_response"
+      },
+      "id": "wait_for_response_1775433983509_0",
+      "position": {
+        "x": 380,
+        "y": 600
+      },
+      "type": "flow-node"
+    }
+  ]
+}

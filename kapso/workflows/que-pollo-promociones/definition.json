@@ -1,0 +1,1255 @@
+{
+  "edges": [
+    {
+      "label": "next",
+      "source": "start",
+      "target": "send_interactive_menu"
+    },
+    {
+      "label": "next",
+      "source": "send_interactive_menu",
+      "target": "wait_opcion_inicial"
+    },
+    {
+      "label": "next",
+      "source": "wait_opcion_inicial",
+      "target": "decide_router_ab"
+    },
+    {
+      "label": "invalid",
+      "source": "decide_router_ab",
+      "target": "send_text_menu_invalid"
+    },
+    {
+      "label": "next",
+      "source": "send_text_menu_invalid",
+      "target": "wait_opcion_inicial"
+    },
+    {
+      "label": "c",
+      "source": "decide_router_ab",
+      "target": "send_text_agente"
+    },
+    {
+      "label": "next",
+      "source": "send_text_agente",
+      "target": "handoff_agente"
+    },
+    {
+      "label": "a",
+      "source": "decide_router_ab",
+      "target": "set_intentos_jersey"
+    },
+    {
+      "label": "next",
+      "source": "set_intentos_jersey",
+      "target": "send_text_jersey_bienvenida"
+    },
+    {
+      "label": "next",
+      "source": "send_text_jersey_bienvenida",
+      "target": "wait_jersey_nombre"
+    },
+    {
+      "label": "next",
+      "source": "wait_jersey_nombre",
+      "target": "fn_jersey_init"
+    },
+    {
+      "label": "next",
+      "source": "fn_jersey_init",
+      "target": "send_text_jersey_pide_ticket"
+    },
+    {
+      "label": "next",
+      "source": "send_text_jersey_pide_ticket",
+      "target": "wait_jersey_ticket"
+    },
+    {
+      "label": "next",
+      "source": "wait_jersey_ticket",
+      "target": "send_text_jersey_validando"
+    },
+    {
+      "label": "next",
+      "source": "send_text_jersey_validando",
+      "target": "decide_jersey_ocr"
+    },
+    {
+      "label": "failed",
+      "source": "decide_jersey_ocr",
+      "target": "send_text_jersey_ocr_retry"
+    },
+    {
+      "label": "next",
+      "source": "send_text_jersey_ocr_retry",
+      "target": "decide_jersey_intentos"
+    },
+    {
+      "label": "agotados",
+      "source": "decide_jersey_intentos",
+      "target": "send_text_jersey_ocr_fin"
+    },
+    {
+      "label": "reintentar",
+      "source": "decide_jersey_intentos",
+      "target": "wait_jersey_ticket_retry"
+    },
+    {
+      "label": "next",
+      "source": "wait_jersey_ticket_retry",
+      "target": "send_text_jersey_validando"
+    },
+    {
+      "label": "ok",
+      "source": "decide_jersey_ocr",
+      "target": "decide_jersey_folio"
+    },
+    {
+      "label": "exists",
+      "source": "decide_jersey_folio",
+      "target": "send_text_jersey_folio_dup"
+    },
+    {
+      "label": "not_exists",
+      "source": "decide_jersey_folio",
+      "target": "fn_jersey_save_ocr"
+    },
+    {
+      "label": "next",
+      "source": "fn_jersey_save_ocr",
+      "target": "send_text_jersey_ocr_ok"
+    },
+    {
+      "label": "next",
+      "source": "send_text_jersey_ocr_ok",
+      "target": "decide_jersey_kg"
+    },
+    {
+      "label": "no",
+      "source": "decide_jersey_kg",
+      "target": "send_text_jersey_kg_no"
+    },
+    {
+      "label": "yes",
+      "source": "decide_jersey_kg",
+      "target": "send_trivia_jersey"
+    },
+    {
+      "label": "next",
+      "source": "send_trivia_jersey",
+      "target": "wait_jersey_trivia"
+    },
+    {
+      "label": "next",
+      "source": "wait_jersey_trivia",
+      "target": "decide_jersey_trivia"
+    },
+    {
+      "label": "wrong",
+      "source": "decide_jersey_trivia",
+      "target": "send_text_jersey_trivia_wrong"
+    },
+    {
+      "label": "correct",
+      "source": "decide_jersey_trivia",
+      "target": "fn_jersey_crear"
+    },
+    {
+      "label": "next",
+      "source": "fn_jersey_crear",
+      "target": "send_text_jersey_ok"
+    },
+    {
+      "label": "b",
+      "source": "decide_router_ab",
+      "target": "set_intentos_huevo"
+    },
+    {
+      "label": "next",
+      "source": "set_intentos_huevo",
+      "target": "send_text_huevo_bienvenida"
+    },
+    {
+      "label": "next",
+      "source": "send_text_huevo_bienvenida",
+      "target": "wait_huevo_nombre"
+    },
+    {
+      "label": "next",
+      "source": "wait_huevo_nombre",
+      "target": "fn_huevo_init"
+    },
+    {
+      "label": "next",
+      "source": "fn_huevo_init",
+      "target": "send_text_huevo_pide_cupon"
+    },
+    {
+      "label": "next",
+      "source": "send_text_huevo_pide_cupon",
+      "target": "wait_huevo_cupon"
+    },
+    {
+      "label": "next",
+      "source": "wait_huevo_cupon",
+      "target": "send_text_huevo_validando"
+    },
+    {
+      "label": "next",
+      "source": "send_text_huevo_validando",
+      "target": "decide_huevo_ocr"
+    },
+    {
+      "label": "failed",
+      "source": "decide_huevo_ocr",
+      "target": "send_text_huevo_ocr_retry"
+    },
+    {
+      "label": "next",
+      "source": "send_text_huevo_ocr_retry",
+      "target": "decide_huevo_intentos"
+    },
+    {
+      "label": "agotados",
+      "source": "decide_huevo_intentos",
+      "target": "send_text_huevo_ocr_fin"
+    },
+    {
+      "label": "reintentar",
+      "source": "decide_huevo_intentos",
+      "target": "wait_huevo_cupon_retry"
+    },
+    {
+      "label": "next",
+      "source": "wait_huevo_cupon_retry",
+      "target": "send_text_huevo_validando"
+    },
+    {
+      "label": "ok",
+      "source": "decide_huevo_ocr",
+      "target": "decide_huevo_rango"
+    },
+    {
+      "label": "fuera_rango",
+      "source": "decide_huevo_rango",
+      "target": "send_text_huevo_fuera_rango"
+    },
+    {
+      "label": "en_rango",
+      "source": "decide_huevo_rango",
+      "target": "decide_huevo_folio"
+    },
+    {
+      "label": "exists",
+      "source": "decide_huevo_folio",
+      "target": "send_text_huevo_folio_dup"
+    },
+    {
+      "label": "not_exists",
+      "source": "decide_huevo_folio",
+      "target": "fn_huevo_save_ocr"
+    },
+    {
+      "label": "next",
+      "source": "fn_huevo_save_ocr",
+      "target": "send_text_huevo_ocr_ok"
+    },
+    {
+      "label": "next",
+      "source": "send_text_huevo_ocr_ok",
+      "target": "send_trivia_huevo"
+    },
+    {
+      "label": "next",
+      "source": "send_trivia_huevo",
+      "target": "wait_huevo_trivia"
+    },
+    {
+      "label": "next",
+      "source": "wait_huevo_trivia",
+      "target": "decide_huevo_trivia"
+    },
+    {
+      "label": "wrong",
+      "source": "decide_huevo_trivia",
+      "target": "send_text_huevo_trivia_wrong"
+    },
+    {
+      "label": "correct",
+      "source": "decide_huevo_trivia",
+      "target": "fn_huevo_crear"
+    },
+    {
+      "label": "next",
+      "source": "fn_huevo_crear",
+      "target": "send_text_huevo_ok"
+    }
+  ],
+  "nodes": [
+    {
+      "data": {
+        "config": {},
+        "node_type": "start"
+      },
+      "id": "start",
+      "position": {
+        "x": 380,
+        "y": 40
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "body_text": "¡Qué tal! ¿En qué te puedo ayudar?\n\nA) Participa por 1 de los 600 Jerseys\nB) Huevo Campeón (sólo si te salió el código promocional)\nC) Hablar con un agente",
+          "buttons": [
+            {
+              "id": "a",
+              "title": "A) Jerseys"
+            },
+            {
+              "id": "b",
+              "title": "B) Huevo Campeón"
+            },
+            {
+              "id": "c",
+              "title": "C) Hablar con agente"
+            }
+          ],
+          "header_type": "none",
+          "interactive_type": "button"
+        },
+        "node_type": "send_interactive"
+      },
+      "id": "send_interactive_menu",
+      "position": {
+        "x": 360,
+        "y": 160
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "has_timeout": false,
+          "save_response_to": "opcion_inicial"
+        },
+        "node_type": "wait_for_response"
+      },
+      "id": "wait_opcion_inicial",
+      "position": {
+        "x": 380,
+        "y": 280
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "conditions": [
+            {
+              "description": "Eligió Jerseys",
+              "label": "a"
+            },
+            {
+              "description": "Eligió Huevo Campeón",
+              "label": "b"
+            },
+            {
+              "description": "Eligió hablar con un agente humano",
+              "label": "c"
+            },
+            {
+              "description": "Respuesta no reconocida",
+              "label": "invalid"
+            }
+          ],
+          "decision_type": "function",
+          "function_slug": "decide-inicial-ab"
+        },
+        "node_type": "decide"
+      },
+      "id": "decide_router_ab",
+      "position": {
+        "x": 380,
+        "y": 400
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "message": "Lo siento, no te entendí. Escribe A, B o C según la opción que quieras."
+        },
+        "node_type": "send_text"
+      },
+      "id": "send_text_menu_invalid",
+      "position": {
+        "x": 380,
+        "y": 520
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "message": "En un momento un agente estará contigo, gracias por esperar."
+        },
+        "node_type": "send_text"
+      },
+      "id": "send_text_agente",
+      "position": {
+        "x": 1100,
+        "y": 520
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "reason": "Cliente solicitó hablar con un agente humano"
+        },
+        "node_type": "handoff"
+      },
+      "id": "handoff_agente",
+      "position": {
+        "x": 1100,
+        "y": 640
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "value_type": "string",
+          "variable_name": "intentos_ocr",
+          "variable_value": "0"
+        },
+        "node_type": "set_variable"
+      },
+      "id": "set_intentos_jersey",
+      "position": {
+        "x": 60,
+        "y": 660
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "message": "Bienvenido a Gana uno de los 60 Jerseys ¡Qué Pollo! de esta semana. Antes que nada, dime tu nombre para registrarte."
+        },
+        "node_type": "send_text"
+      },
+      "id": "send_text_jersey_bienvenida",
+      "position": {
+        "x": 60,
+        "y": 780
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "has_timeout": false,
+          "save_response_to": "nombre_registro"
+        },
+        "node_type": "wait_for_response"
+      },
+      "id": "wait_jersey_nombre",
+      "position": {
+        "x": 60,
+        "y": 900
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "message": "Muy bien {{vars.nombre_registro}}, ahora sube una foto clara de tu ticket de compra."
+        },
+        "node_type": "send_text"
+      },
+      "id": "send_text_jersey_pide_ticket",
+      "position": {
+        "x": 60,
+        "y": 1020
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "has_timeout": false,
+          "save_response_to": "archivo_ticket"
+        },
+        "node_type": "wait_for_response"
+      },
+      "id": "wait_jersey_ticket",
+      "position": {
+        "x": 60,
+        "y": 1140
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "conditions": [
+            {
+              "description": "OCR extrajo todos los campos",
+              "label": "ok"
+            },
+            {
+              "description": "OCR no logró leer el ticket",
+              "label": "failed"
+            }
+          ],
+          "decision_type": "function",
+          "function_slug": "firebase-ocr-ticket"
+        },
+        "node_type": "decide"
+      },
+      "id": "decide_jersey_ocr",
+      "position": {
+        "x": 60,
+        "y": 1260
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "message": "No puedo detectar toda la información del ticket. Por favor sube otra foto, más clara."
+        },
+        "node_type": "send_text"
+      },
+      "id": "send_text_jersey_ocr_retry",
+      "position": {
+        "x": -320,
+        "y": 1340
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "conditions": [
+            {
+              "description": "Aún quedan intentos",
+              "label": "reintentar"
+            },
+            {
+              "description": "Llegó al máximo de 3 intentos",
+              "label": "agotados"
+            }
+          ],
+          "decision_type": "function",
+          "function_slug": "incrementar-intentos-ocr"
+        },
+        "node_type": "decide"
+      },
+      "id": "decide_jersey_intentos",
+      "position": {
+        "x": -320,
+        "y": 1460
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "message": "Lo sentimos, no pudimos leer tu ticket tras varios intentos. Si quieres intentar de nuevo, escríbeme un mensaje nuevo y comenzamos otra vez."
+        },
+        "node_type": "send_text"
+      },
+      "id": "send_text_jersey_ocr_fin",
+      "position": {
+        "x": -660,
+        "y": 1620
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "has_timeout": false,
+          "save_response_to": "archivo_ticket"
+        },
+        "node_type": "wait_for_response"
+      },
+      "id": "wait_jersey_ticket_retry",
+      "position": {
+        "x": -360,
+        "y": 1640
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "message": "Gracias por tu compra en {{vars.sucursal}} el {{vars.fecha_ticket_legible}}."
+        },
+        "node_type": "send_text"
+      },
+      "id": "send_text_jersey_ocr_ok",
+      "position": {
+        "x": 60,
+        "y": 1380
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "conditions": [
+            {
+              "description": "Folio ya registrado y VÁLIDO",
+              "label": "exists"
+            },
+            {
+              "description": "Folio nuevo",
+              "label": "not_exists"
+            }
+          ],
+          "decision_type": "function",
+          "function_slug": "firebase-consultar-folio"
+        },
+        "node_type": "decide"
+      },
+      "id": "decide_jersey_folio",
+      "position": {
+        "x": 60,
+        "y": 1500
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "message": "El Ticket con folio {{vars.folio}} ya ha sido registrado antes y cada ticket sólo puede participar una vez. Escríbeme un mensaje para enviar un nuevo ticket."
+        },
+        "node_type": "send_text"
+      },
+      "id": "send_text_jersey_folio_dup",
+      "position": {
+        "x": -100,
+        "y": 1640
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "conditions": [
+            {
+              "description": "Tiene >= 4kg de Bistec",
+              "label": "yes"
+            },
+            {
+              "description": "Menos de 4kg de Bistec Marinado",
+              "label": "no"
+            }
+          ],
+          "decision_type": "function",
+          "function_slug": "decide-kg-suficiente"
+        },
+        "node_type": "decide"
+      },
+      "id": "decide_jersey_kg",
+      "position": {
+        "x": 200,
+        "y": 1660
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "message": "Lo sentimos, el ticket con folio {{vars.folio}} presenta {{vars.kg_bistec}}kg, debajo de los 4kg de Bistec Marinado necesarios para participar. Si tienes otro ticket, escríbeme un mensaje nuevo."
+        },
+        "node_type": "send_text"
+      },
+      "id": "send_text_jersey_kg_no",
+      "position": {
+        "x": -160,
+        "y": 1800
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "body_text": "Por favor contesta esta breve pregunta: ¿Cuántas patas tiene un pollo?",
+          "buttons": [
+            {
+              "id": "a",
+              "title": "a) 2"
+            },
+            {
+              "id": "b",
+              "title": "b) 50"
+            },
+            {
+              "id": "c",
+              "title": "c) 100"
+            }
+          ],
+          "header_type": "none",
+          "interactive_type": "button"
+        },
+        "node_type": "send_interactive"
+      },
+      "id": "send_trivia_jersey",
+      "position": {
+        "x": 180,
+        "y": 1800
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "has_timeout": false,
+          "save_response_to": "trivia_resp"
+        },
+        "node_type": "wait_for_response"
+      },
+      "id": "wait_jersey_trivia",
+      "position": {
+        "x": 60,
+        "y": 1940
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "conditions": [
+            {
+              "description": "Respondió la opción a",
+              "label": "correct"
+            },
+            {
+              "description": "Respondió cualquier otra cosa",
+              "label": "wrong"
+            }
+          ],
+          "decision_type": "function",
+          "function_slug": "decide-trivia-correct"
+        },
+        "node_type": "decide"
+      },
+      "id": "decide_jersey_trivia",
+      "position": {
+        "x": 40,
+        "y": 2060
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "message": "Lo sentimos, la respuesta es incorrecta. Si quieres intentarlo de nuevo, escríbeme un mensaje nuevo."
+        },
+        "node_type": "send_text"
+      },
+      "id": "send_text_jersey_trivia_wrong",
+      "position": {
+        "x": -280,
+        "y": 2220
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "message": "Estamos validando tu información, esto puede tomar un minuto."
+        },
+        "node_type": "send_text"
+      },
+      "id": "send_text_jersey_validando",
+      "position": {
+        "x": 60,
+        "y": 1200
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "function_slug": "firebase-crear-registro",
+          "save_response_to": "crear_result"
+        },
+        "node_type": "function"
+      },
+      "id": "fn_jersey_init",
+      "position": {
+        "x": 60,
+        "y": 960
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "function_slug": "firebase-actualizar-registro",
+          "save_response_to": "actualizar_result"
+        },
+        "node_type": "function"
+      },
+      "id": "fn_jersey_save_ocr",
+      "position": {
+        "x": 60,
+        "y": 1320
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "function_slug": "firebase-finalizar-registro",
+          "save_response_to": "finalizar_result"
+        },
+        "node_type": "function"
+      },
+      "id": "fn_jersey_crear",
+      "position": {
+        "x": 80,
+        "y": 2240
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "message": "¡Respuesta correcta, {{vars.nombre_registro}}! Tu ticket ha sido registrado con el ID {{vars.id_registro}} y ya estás participando. Para conocer los ganadores de esta semana, ingresa a la página oficial de ¡Qué Pollo! ( https://www.facebook.com/share/1EGVGzr4Ro/ ) este próximo viernes a las 12 del día."
+        },
+        "node_type": "send_text"
+      },
+      "id": "send_text_jersey_ok",
+      "position": {
+        "x": 40,
+        "y": 2400
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "value_type": "string",
+          "variable_name": "intentos_ocr",
+          "variable_value": "0"
+        },
+        "node_type": "set_variable"
+      },
+      "id": "set_intentos_huevo",
+      "position": {
+        "x": 720,
+        "y": 660
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "message": "Bienvenido a Huevo Campeón ¡Qué Pollo! ¿Cuál es tu nombre?"
+        },
+        "node_type": "send_text"
+      },
+      "id": "send_text_huevo_bienvenida",
+      "position": {
+        "x": 720,
+        "y": 780
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "has_timeout": false,
+          "save_response_to": "nombre_registro"
+        },
+        "node_type": "wait_for_response"
+      },
+      "id": "wait_huevo_nombre",
+      "position": {
+        "x": 720,
+        "y": 900
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "message": "¡Muy bien {{vars.nombre_registro}}! Ahora sube una foto clara de tu cupón ganador, de frente y que se lea el número de folio del cupón."
+        },
+        "node_type": "send_text"
+      },
+      "id": "send_text_huevo_pide_cupon",
+      "position": {
+        "x": 720,
+        "y": 1020
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "has_timeout": false,
+          "save_response_to": "archivo_ticket"
+        },
+        "node_type": "wait_for_response"
+      },
+      "id": "wait_huevo_cupon",
+      "position": {
+        "x": 720,
+        "y": 1140
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "conditions": [
+            {
+              "description": "OCR detectó folio del cupón",
+              "label": "ok"
+            },
+            {
+              "description": "OCR no logró leer el cupón",
+              "label": "failed"
+            }
+          ],
+          "decision_type": "function",
+          "function_slug": "firebase-ocr-ticket"
+        },
+        "node_type": "decide"
+      },
+      "id": "decide_huevo_ocr",
+      "position": {
+        "x": 720,
+        "y": 1260
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "message": "No puedo detectar la información del cupón. Por favor sube otra foto, más clara."
+        },
+        "node_type": "send_text"
+      },
+      "id": "send_text_huevo_ocr_retry",
+      "position": {
+        "x": 440,
+        "y": 1360
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "conditions": [
+            {
+              "description": "Aún quedan intentos",
+              "label": "reintentar"
+            },
+            {
+              "description": "Llegó al máximo de 3 intentos",
+              "label": "agotados"
+            }
+          ],
+          "decision_type": "function",
+          "function_slug": "incrementar-intentos-ocr"
+        },
+        "node_type": "decide"
+      },
+      "id": "decide_huevo_intentos",
+      "position": {
+        "x": 520,
+        "y": 1500
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "message": "Lo sentimos, no pudimos leer tu cupón tras varios intentos. Si quieres intentar de nuevo, escríbeme un mensaje nuevo y comenzamos otra vez."
+        },
+        "node_type": "send_text"
+      },
+      "id": "send_text_huevo_ocr_fin",
+      "position": {
+        "x": 420,
+        "y": 1620
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "has_timeout": false,
+          "save_response_to": "archivo_ticket"
+        },
+        "node_type": "wait_for_response"
+      },
+      "id": "wait_huevo_cupon_retry",
+      "position": {
+        "x": 720,
+        "y": 1620
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "message": "Estoy registrando tu cupón con folio {{vars.folio}}."
+        },
+        "node_type": "send_text"
+      },
+      "id": "send_text_huevo_ocr_ok",
+      "position": {
+        "x": 1080,
+        "y": 1300
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "conditions": [
+            {
+              "description": "Folio del cupón ya registrado",
+              "label": "exists"
+            },
+            {
+              "description": "Folio nuevo",
+              "label": "not_exists"
+            }
+          ],
+          "decision_type": "function",
+          "function_slug": "firebase-consultar-folio"
+        },
+        "node_type": "decide"
+      },
+      "id": "decide_huevo_folio",
+      "position": {
+        "x": 1100,
+        "y": 1460
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "message": "El Folio {{vars.folio}} ya ha sido registrado antes y cada cupón sólo puede participar una vez. Escríbeme un mensaje para enviar un nuevo cupón."
+        },
+        "node_type": "send_text"
+      },
+      "id": "send_text_huevo_folio_dup",
+      "position": {
+        "x": 980,
+        "y": 1600
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "body_text": "Por favor contesta esta breve pregunta: ¿Cuántos picos tiene un pollo?",
+          "buttons": [
+            {
+              "id": "a",
+              "title": "a) 1"
+            },
+            {
+              "id": "b",
+              "title": "b) 10"
+            },
+            {
+              "id": "c",
+              "title": "c) 20"
+            }
+          ],
+          "header_type": "none",
+          "interactive_type": "button"
+        },
+        "node_type": "send_interactive"
+      },
+      "id": "send_trivia_huevo",
+      "position": {
+        "x": 1280,
+        "y": 1600
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "has_timeout": false,
+          "save_response_to": "trivia_resp"
+        },
+        "node_type": "wait_for_response"
+      },
+      "id": "wait_huevo_trivia",
+      "position": {
+        "x": 720,
+        "y": 1740
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "conditions": [
+            {
+              "description": "Respondió la opción a",
+              "label": "correct"
+            },
+            {
+              "description": "Respondió cualquier otra cosa",
+              "label": "wrong"
+            }
+          ],
+          "decision_type": "function",
+          "function_slug": "decide-trivia-correct"
+        },
+        "node_type": "decide"
+      },
+      "id": "decide_huevo_trivia",
+      "position": {
+        "x": 720,
+        "y": 1860
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "message": "Lo sentimos, la respuesta es incorrecta. Si quieres intentarlo de nuevo, escríbeme un mensaje nuevo."
+        },
+        "node_type": "send_text"
+      },
+      "id": "send_text_huevo_trivia_wrong",
+      "position": {
+        "x": 420,
+        "y": 1980
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "message": "Estamos validando tu información, esto puede tomar un minuto."
+        },
+        "node_type": "send_text"
+      },
+      "id": "send_text_huevo_validando",
+      "position": {
+        "x": 720,
+        "y": 1200
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "function_slug": "firebase-crear-registro",
+          "save_response_to": "crear_result"
+        },
+        "node_type": "function"
+      },
+      "id": "fn_huevo_init",
+      "position": {
+        "x": 720,
+        "y": 960
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "function_slug": "firebase-actualizar-registro",
+          "save_response_to": "actualizar_result"
+        },
+        "node_type": "function"
+      },
+      "id": "fn_huevo_save_ocr",
+      "position": {
+        "x": 720,
+        "y": 1320
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "function_slug": "firebase-finalizar-registro",
+          "save_response_to": "finalizar_result"
+        },
+        "node_type": "function"
+      },
+      "id": "fn_huevo_crear",
+      "position": {
+        "x": 720,
+        "y": 1980
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "conditions": [
+            {
+              "description": "Folio numéricamente está entre 1 y 50",
+              "label": "en_rango"
+            },
+            {
+              "description": "Folio fuera del rango oficial",
+              "label": "fuera_rango"
+            }
+          ],
+          "decision_type": "function",
+          "function_slug": "decide-rango-cupon"
+        },
+        "node_type": "decide"
+      },
+      "id": "decide_huevo_rango",
+      "position": {
+        "x": 720,
+        "y": 1430
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "message": "Lo sentimos, el folio {{vars.folio}} no corresponde a un cupón Huevo Campeón válido. Asegúrate de subir la foto del cupón oficial ¡Qué Pollo!"
+        },
+        "node_type": "send_text"
+      },
+      "id": "send_text_huevo_fuera_rango",
+      "position": {
+        "x": 480,
+        "y": 1540
+      },
+      "type": "flow-node"
+    },
+    {
+      "data": {
+        "config": {
+          "message": "Respuesta correcta, tu cupón ha sido registrado con el ID {{vars.id_registro}}, ¡FELICIDADES, eres un ganador en Huevo Campeón!. En breve te contactaremos para la entrega de tu premio."
+        },
+        "node_type": "send_text"
+      },
+      "id": "send_text_huevo_ok",
+      "position": {
+        "x": 720,
+        "y": 2100
+      },
+      "type": "flow-node"
+    }
+  ]
+}

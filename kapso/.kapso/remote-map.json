@@ -1,0 +1,203 @@
+{
+  "functions": {
+    "decide-inicial-ab": {
+      "files": {
+        "functions/decide-inicial-ab/function.yaml": "2c4c577256509948e552e826a2bf51b7b90f42bdb749b4f2db27bb8390d2d025",
+        "functions/decide-inicial-ab/index.js": "30d22c067764827af288f80676714831a419670a2c92906b47310e18714dfe3f"
+      },
+      "id": "cb6797ba-f0f9-479e-9825-677bbba1b2e7",
+      "lastDeployedAt": "2026-05-07T23:26:20-04:00",
+      "lockVersion": 3,
+      "slug": "decide-inicial-ab",
+      "status": "deployed",
+      "updatedAt": "2026-05-07T23:26:20-04:00"
+    },
+    "decide-kg-suficiente": {
+      "files": {
+        "functions/decide-kg-suficiente/function.yaml": "f7951964d5f2ecfc87d498bf556b8f40ef2dfcc154c58a1d2ea7cd4c8c6f9b92",
+        "functions/decide-kg-suficiente/index.js": "ccd6da6aa84c44c0de77c977de4e772ebdcde169d11e1370bee4eb1f3a567e6f"
+      },
+      "id": "d5540a21-5df5-467f-a414-ce1eb5a47d09",
+      "lastDeployedAt": "2026-05-04T18:12:20-04:00",
+      "lockVersion": 1,
+      "slug": "decide-kg-suficiente",
+      "status": "deployed",
+      "updatedAt": "2026-05-04T18:12:20-04:00"
+    },
+    "decide-rango-cupon": {
+      "files": {
+        "functions/decide-rango-cupon/function.yaml": "44151478c9c5f8e0bc834dc5cc68f9b4a61214e1fe979f2045eb7741c8b9549e",
+        "functions/decide-rango-cupon/index.js": "194889da77135360b17fb4bac9bacdfa21b56b5a6576b8ebd61851e9d16b6473"
+      },
+      "id": "caceb2ac-8294-43a9-9016-c7ff99f919bb",
+      "lastDeployedAt": "2026-05-04T20:45:48-04:00",
+      "lockVersion": 1,
+      "slug": "decide-rango-cupon",
+      "status": "deployed",
+      "updatedAt": "2026-05-04T20:45:48-04:00"
+    },
+    "decide-trivia-correct": {
+      "files": {
+        "functions/decide-trivia-correct/function.yaml": "99f273bb6b57ea5ac708e9e757ffe4f7b3f3ed65a8d0ea678036f194cd17b71f",
+        "functions/decide-trivia-correct/index.js": "da4a84534e82e7c8a9f89c72ec9d3f7c792ae2ea5e167ee2cd1ff6a814fb494b"
+      },
+      "id": "86964ef0-16dd-42c9-b808-c129e2619cf7",
+      "lastDeployedAt": "2026-05-04T19:15:24-04:00",
+      "lockVersion": 3,
+      "slug": "decide-trivia-correct",
+      "status": "deployed",
+      "updatedAt": "2026-05-04T19:15:24-04:00"
+    },
+    "firebase-actualizar-registro": {
+      "files": {
+        "functions/firebase-actualizar-registro/function.yaml": "fc3e502c3e29ed11109d0d4d36a9e4bcfbc19d1a5fb08ee41abb1626f0d50c91",
+        "functions/firebase-actualizar-registro/index.js": "4cd74022d1018db66967c8c34432693621b73424dc001c3a529da92504bd35f3"
+      },
+      "id": "1586e34c-3d4c-4217-a322-78f85d035e7c",
+      "lastDeployedAt": "2026-05-05T12:35:04-04:00",
+      "lockVersion": 3,
+      "slug": "firebase-actualizar-registro",
+      "status": "deployed",
+      "updatedAt": "2026-05-05T12:35:04-04:00"
+    },
+    "firebase-consultar-folio": {
+      "files": {
+        "functions/firebase-consultar-folio/function.yaml": "80912ad035d75091359dfd79e98d876feefc902d979641061b7a7d84c41eacfb",
+        "functions/firebase-consultar-folio/index.js": "fb871f85afca93704525940a0a0fe87a643c9a51ca42b0cd3b53215da2bd3da8"
+      },
+      "id": "945b67a5-e170-4bb6-ab02-71892964fa1d",
+      "lastDeployedAt": "2026-05-05T11:35:44-04:00",
+      "lockVersion": 6,
+      "slug": "firebase-consultar-folio",
+      "status": "deployed",
+      "updatedAt": "2026-05-05T11:35:44-04:00"
+    },
+    "firebase-crear-registro": {
+      "files": {
+        "functions/firebase-crear-registro/function.yaml": "3cf5f0b9898c8fa95c623fa4fcac61a7e571f486f5da6f9a0ff63ab8c2ee4a2d",
+        "functions/firebase-crear-registro/index.js": "d94f58748ee3ecd742e6ab91f8a06efc0e591bb7b20ef0a9a16daa356651ba98"
+      },
+      "id": "e45ebf70-9756-472c-b15d-de67f01151da",
+      "lastDeployedAt": "2026-05-04T20:28:56-04:00",
+      "lockVersion": 6,
+      "slug": "firebase-crear-registro",
+      "status": "deployed",
+      "updatedAt": "2026-05-04T20:28:56-04:00"
+    },
+    "firebase-finalizar-registro": {
+      "files": {
+        "functions/firebase-finalizar-registro/function.yaml": "9f228dcef5a27f2fa0dc98c4ec398c7fe254e909d1554179031dbbbcad21a3b1",
+        "functions/firebase-finalizar-registro/index.js": "9a986b45fa181c287f959ad9a676a3c809eb6efcb40d5ae12cf17b016acfb004"
+      },
+      "id": "76040d26-5763-4f5a-8a9d-bd6a3ad935c6",
+      "lastDeployedAt": "2026-05-04T20:29:03-04:00",
+      "lockVersion": 1,
+      "slug": "firebase-finalizar-registro",
+      "status": "deployed",
+      "updatedAt": "2026-05-04T20:29:03-04:00"
+    },
+    "firebase-ocr-ticket": {
+      "files": {
+        "functions/firebase-ocr-ticket/function.yaml": "01f6965688468266e3c6b1d153e3fe100cd5dd89d4d7a26b107027b9602abb30",
+        "functions/firebase-ocr-ticket/index.js": "0315ae19608f4a7594e5b38b4a00f1fec8e7effc84516223b9e0518615fa7d29"
+      },
+      "id": "d1349b4a-d14a-490b-9269-df08efab4f07",
+      "lastDeployedAt": "2026-05-04T20:13:16-04:00",
+      "lockVersion": 15,
+      "slug": "firebase-ocr-ticket",
+      "status": "deployed",
+      "updatedAt": "2026-05-04T20:13:16-04:00"
+    },
+    "incrementar-intentos-ocr": {
+      "files": {
+        "functions/incrementar-intentos-ocr/function.yaml": "103f23623e4b43c82620075a6d9f506b4e425d20bcb42e9e9de57b124eafccf9",
+        "functions/incrementar-intentos-ocr/index.js": "00dc7540022fc7a3af5214162f6218ffbbab62e6a19d095d624f7f1b612c41be"
+      },
+      "id": "ee3c31d5-df47-4bf6-81fa-2403cd06dc12",
+      "lastDeployedAt": "2026-05-04T18:12:28-04:00",
+      "lockVersion": 1,
+      "slug": "incrementar-intentos-ocr",
+      "status": "deployed",
+      "updatedAt": "2026-05-04T18:12:28-04:00"
+    }
+  },
+  "version": 1,
+  "workflows": {
+    "que-pollo-promociones": {
+      "files": {
+        "workflows/que-pollo-promociones/definition.json": "93a220af4c2f9288186f788fb76eefc3ac66cd7f6334e08fad139dafc4b1c7aa",
+        "workflows/que-pollo-promociones/workflow.yaml": "f4cbdecdd427fcdc656e8de31db1946f44c464925555c5f6c7d59d3e9c5c47fe"
+      },
+      "generatedSource": {
+        "hash": "63aa115f80909498c0e5fbae9bd6b52973608838b95ae62263f387626b9429d8",
+        "path": "workflows/que-pollo-promociones/workflow.js"
+      },
+      "id": "e0190a79-0a07-4657-8910-7102d681e37a",
+      "lockVersion": 100,
+      "slug": "que-pollo-promociones",
+      "sourceFile": {
+        "hash": "82d4703f98583d8c58f7fc8f03a8959dec08cee7a1992e74047ee7f3bd6bac79",
+        "path": "workflows/que-pollo-promociones/workflow.js"
+      },
+      "status": "active",
+      "updatedAt": "2026-05-08T18:29:36-04:00"
+    },
+    "untitled-workflow": {
+      "files": {
+        "workflows/untitled-workflow/definition.json": "358ae7ee63ce67b27b384377258f07aace28ae156970920309d7fe9025918c8f",
+        "workflows/untitled-workflow/workflow.yaml": "565c88469518050977bcac47bd11b1f1f315baf3eba56bed207d1432744a1fe7"
+      },
+      "generatedSource": {
+        "hash": "715da57464ca286348b4329086f79d9de0cd91f056a4fa3a5b2e6f6ed81349da",
+        "path": "workflows/untitled-workflow/workflow.js"
+      },
+      "id": "fa1aec31-776a-4ad2-9a58-88735c7fb132",
+      "lockVersion": 33,
+      "slug": "untitled-workflow",
+      "sourceFile": {
+        "hash": "715da57464ca286348b4329086f79d9de0cd91f056a4fa3a5b2e6f6ed81349da",
+        "path": "workflows/untitled-workflow/workflow.js"
+      },
+      "status": "draft",
+      "updatedAt": "2026-04-28T11:41:30-04:00"
+    },
+    "untitled-workflow-2": {
+      "files": {
+        "workflows/untitled-workflow-2/definition.json": "a04111c0f8281ba5ecf8552770c1c9effc94ce74a6b379f8d9470f6b7e971eb7",
+        "workflows/untitled-workflow-2/workflow.yaml": "d904e4ba93b083b4b959e20def3bb5858c5514a5d5464895ea1d4440edd82c63"
+      },
+      "generatedSource": {
+        "hash": "35ab2c2c3ca05de3341ac978ddbaafca75b7add07dab75879bb5e1e666a7349f",
+        "path": "workflows/untitled-workflow-2/workflow.js"
+      },
+      "id": "662e8341-70a4-4da6-af2a-7abae6fda17e",
+      "lockVersion": 77,
+      "slug": "untitled-workflow-2",
+      "sourceFile": {
+        "hash": "35ab2c2c3ca05de3341ac978ddbaafca75b7add07dab75879bb5e1e666a7349f",
+        "path": "workflows/untitled-workflow-2/workflow.js"
+      },
+      "status": "draft",
+      "updatedAt": "2026-04-28T11:41:30-04:00"
+    },
+    "untitled-workflow-3": {
+      "files": {
+        "workflows/untitled-workflow-3/definition.json": "b5d5fd34ce03a95c66da438d822e31de26678bb4c4935c87bba3501df6ff254a",
+        "workflows/untitled-workflow-3/workflow.yaml": "29054f0448b877c9fb38cff75c8d0b62adcde5cb1fab72f8977d87e57e3ca2e1"
+      },
+      "generatedSource": {
+        "hash": "876859e151dd1db57ff615024542f98745a8f29772304d1e8a297bb0c8f12b58",
+        "path": "workflows/untitled-workflow-3/workflow.js"
+      },
+      "id": "cdd9a429-0f12-4c7c-b9c5-2a92f4c6975f",
+      "lockVersion": 57,
+      "slug": "untitled-workflow-3",
+      "sourceFile": {
+        "hash": "876859e151dd1db57ff615024542f98745a8f29772304d1e8a297bb0c8f12b58",
+        "path": "workflows/untitled-workflow-3/workflow.js"
+      },
+      "status": "active",
+      "updatedAt": "2026-04-14T11:45:42-04:00"
+    }
+  }
+}
